@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="reveal/dist/reset.css">
+		<link rel="stylesheet" href="reveal/dist/reveal.css">
+		<link rel="stylesheet" href="reveal/dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="reveal/plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>Slide 1</section>
+				<section>Slide 2
+						<aside class="notes">
+						<p>Some notes</p>
+						</aside>
+						<p>Some slide text</p>
+						<aside class="notes">
+						<p>and some more notes</p>
+					</aside>
+				</section>
+			</div>
+		</div>
+
+		<script src="reveal/dist/reveal.js"></script>
+		<script src="reveal/plugin/notes/notes.js"></script>
+		<script src="reveal/plugin/markdown/markdown.js"></script>
+		<script src="reveal/plugin/highlight/highlight.js"></script>
+        <script src="reveal/plugin/math/math.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/lib/js/emojione.min.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+                width: 1600,
+                height: 900,
+                minScale: 0.2,
+                maxScale: 5.0,
+                backgroundTransition: 'slide',
+                math: {
+                    mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+                    config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+                },
+                markdown: {
+                    smartypants: true
+                },
+                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ],
+                dependencies: [{ src: 'plugin/toolbar/toolbar.js', async: true }],
+                toolbar: {
+                    position: 'top',
+                    fullscreen: true,
+                    overview: false,
+                    pause: true,
+                    notes: false,
+                    help: true,
+                    captureMenu: false,
+                    capturePlaybackControl: false,
+                    loadIcons: false
+            }
+            });
+
+            emojione.imageType = 'svg';
+            emojione.ascii = true;
+		</script>
+	</body>
+</html>
