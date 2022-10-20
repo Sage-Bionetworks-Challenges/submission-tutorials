@@ -1,12 +1,10 @@
-<!-- .slide: data-background="var(--primary)" -->
+<!-- .slide: class="dark" -->
 
 # Test Tutorial
 
 ### Sage Bionetworks
 
 ---
-
-<!-- .slide: data-background="var(--primary)" -->
 
 ## Challenge Organizers
 
@@ -35,7 +33,7 @@ Verena Chung
 
 ---
 
-<!-- .slide: data-background="var(--primary)" -->
+<!-- .slide: data-background="var(--primary)" class="dark" -->
 
 ## Getting help
 
